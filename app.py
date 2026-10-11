@@ -74,7 +74,7 @@ if st.button("วิเคราะห์เมนู"):
                 จงวิเคราะห์เมนู: "{food_input}" ประเมินแคลอรี สารอาหาร คำเตือน และคำแนะนำปรับสูตร"""
 
                 response = client.models.generate_content(
-                    model="gemini-2.5-flash"
+                    model="gemini-2.5-flash",
                     contents=prompt,
                     config=types.GenerateContentConfig(
                         response_mime_type="application/json",
